@@ -1,0 +1,18 @@
+[package]
+authors = ["Jorge Aparicio <jorge@japaric.io>"]
+edition = "2018"
+name = "led-compass"
+version = "0.1.0"
+
+[dependencies]
+m = "0.1.1"
+  
+[dependencies.aux15]
+path = "auxiliary"
+# enable this if you are going to use an external serial adapter
+features = ["adapter"]
+
+[dependencies.heapless]
+default-features = false
+version = "0.3.7"
+ 
